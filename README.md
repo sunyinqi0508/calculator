@@ -1,20 +1,7 @@
 # Calculator
 
 Forked from https://github.com/Microsoft/calculator
-Windows Calculator with Custom Background Support while retaining Acrylic effect.
-
-
-
-
-
-
-
-
-
-
-
-
-
+Windows Calculator with Custom Background Support while retaining Acrylic effect.<br><br><br><br>
 
 
 The Windows Calculator app is a modern Windows app written in C++ that ships pre-installed with Windows.
