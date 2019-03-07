@@ -74,7 +74,11 @@
                                   BackgroundSource="HostBackdrop"
                                   FallbackColor="{ThemeResource SystemChromeMediumColor}"
                                   TintColor="{ThemeResource SystemChromeLowColor}"
-                                  TintOpacity="0.7"/>
+                                  TintOpacity="0.0"/>
+                    <ImageBrush x:Key="BackgroundImageBrush"
+                                  ImageSource="Assets/Akari.png"
+                                  Opacity="0.25"
+                                  />
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="HighContrast">
                     <Thickness x:Key="HighContrastThicknessTop">0,1,0,0</Thickness>

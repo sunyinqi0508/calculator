@@ -73,7 +73,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -192,6 +192,7 @@
       <AdditionalOptions>/bigobj /await /std:c++17 </AdditionalOptions>
       <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>$(SolutionDir)..\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -581,6 +582,7 @@
     <PRIResource Include="Resources\zh-tw\Resources.resw" Condition="Exists('Resources\zh-tw\Resources.resw')" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\Akari.png" />
     <Image Include="Assets\CalculatorAppList.contrast-black_scale-100.png" />
     <Image Include="Assets\CalculatorAppList.contrast-black_scale-125.png" />
     <Image Include="Assets\CalculatorAppList.contrast-black_scale-150.png" />

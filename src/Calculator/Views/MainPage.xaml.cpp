@@ -118,6 +118,7 @@ void MainPage::WindowSizeChanged(_In_ Platform::Object^ /*sender*/, _In_ Windows
 {
     // We don't use layout aware page's view states, we have our own
     UpdateViewState();
+
 }
 
 void MainPage::OnAppPropertyChanged(_In_ Platform::Object^ sender, _In_ Windows::UI::Xaml::Data::PropertyChangedEventArgs^ e)
