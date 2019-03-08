@@ -71,13 +71,15 @@
                                            TargetTheme="Light"
                                            Color="{ThemeResource SystemAccentColorLight3}"/>
                     <AcrylicBrush x:Key="AppChromeAcrylicHostBackdropMediumLowBrush"
-                                  BackgroundSource="HostBackdrop"
-                                  FallbackColor="{ThemeResource SystemChromeMediumColor}"
+                                  BackgroundSource="HostBackdrop"                                 
+                                  FallbackColor="#00000000"
+                                  Opacity="1.0"
                                   TintColor="{ThemeResource SystemChromeLowColor}"
                                   TintOpacity="0.0"/>
                     <ImageBrush x:Key="BackgroundImageBrush"
+                                  Stretch="None"
                                   ImageSource="Assets/Akari.png"
-                                  Opacity="0.25"
+                                  Opacity="0.5"
                                   />
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="HighContrast">
