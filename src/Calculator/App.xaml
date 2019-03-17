@@ -377,12 +377,13 @@
                                 </Grid.ColumnDefinitions>
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="ActiveStates">
-                                        <VisualState x:Name="Active"/>
-                                        <VisualState x:Name="Normal">
+                                        <VisualState x:Name="Active">
                                             <VisualState.Setters>
-                                                <Setter Target="normalOutput.FontWeight" Value="Light"/>
+                                                <Setter Target="normalOutput.FontWeight" Value="SemiBold"/>
+                                                <Setter Target="normalOutput.IsTextSelectionEnabled" Value="True"/>
                                             </VisualState.Setters>
                                         </VisualState>
+                                        <VisualState x:Name="Normal"/>
                                     </VisualStateGroup>
                                 </VisualStateManager.VisualStateGroups>
                                 <ScrollViewer x:Name="textContainer"
@@ -396,7 +397,7 @@
                                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                                Foreground="{TemplateBinding Foreground}"
                                                FontSize="{TemplateBinding FontSize}"
-                                               FontWeight="SemiBold"
+                                               FontWeight="Light"
                                                AutomationProperties.AccessibilityView="Raw"
                                                Text="{TemplateBinding DisplayValue}"
                                                TextAlignment="{TemplateBinding HorizontalContentAlignment}"
@@ -463,12 +464,13 @@
                                 </Grid.ColumnDefinitions>
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="ActiveStates">
-                                        <VisualState x:Name="Active"/>
-                                        <VisualState x:Name="Normal">
+                                        <VisualState x:Name="Active">
                                             <VisualState.Setters>
-                                                <Setter Target="normalOutput.FontWeight" Value="Light"/>
+                                                <Setter Target="normalOutput.IsTextSelectionEnabled" Value="True"/>
+                                                <Setter Target="normalOutput.FontWeight" Value="SemiBold"/>
                                             </VisualState.Setters>
                                         </VisualState>
+                                        <VisualState x:Name="Normal"/>
                                     </VisualStateGroup>
                                 </VisualStateManager.VisualStateGroups>
                                 <ScrollViewer x:Name="textContainer"
@@ -482,7 +484,7 @@
                                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                                Foreground="{TemplateBinding Foreground}"
                                                FontSize="{TemplateBinding FontSize}"
-                                               FontWeight="SemiBold"
+                                               FontWeight="Light"
                                                AutomationProperties.AccessibilityView="Raw"
                                                Text="{TemplateBinding DisplayValue}"
                                                TextAlignment="{TemplateBinding HorizontalContentAlignment}"
@@ -550,12 +552,13 @@
                                 </Grid.ColumnDefinitions>
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="ActiveStates">
-                                        <VisualState x:Name="Active"/>
-                                        <VisualState x:Name="Normal">
+                                        <VisualState x:Name="Active">
                                             <VisualState.Setters>
-                                                <Setter Target="normalOutput.FontWeight" Value="Light"/>
+                                                <Setter Target="normalOutput.FontWeight" Value="SemiBold"/>
+                                                <Setter Target="normalOutput.IsTextSelectionEnabled" Value="True"/>
                                             </VisualState.Setters>
                                         </VisualState>
+                                        <VisualState x:Name="Normal"/>
                                     </VisualStateGroup>
                                 </VisualStateManager.VisualStateGroups>
                                 <ScrollViewer x:Name="textContainer"
@@ -569,7 +572,7 @@
                                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                                Foreground="{TemplateBinding Foreground}"
                                                FontSize="{TemplateBinding FontSize}"
-                                               FontWeight="SemiBold"
+                                               FontWeight="Light"
                                                AutomationProperties.AccessibilityView="Raw"
                                                Text="{TemplateBinding DisplayValue}"
                                                TextAlignment="{TemplateBinding HorizontalContentAlignment}"
