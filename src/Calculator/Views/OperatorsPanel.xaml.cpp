@@ -1,4 +1,4 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
 #include "pch.h"
@@ -28,8 +28,9 @@ OperatorsPanel::OperatorsPanel()
     InitializeComponent();
 }
 
-StandardCalculatorViewModel^ OperatorsPanel::Model::get() {
-    return static_cast<CalculatorApp::ViewModel::StandardCalculatorViewModel^>(this->DataContext);
+StandardCalculatorViewModel ^ OperatorsPanel::Model::get()
+{
+    return static_cast<CalculatorApp::ViewModel::StandardCalculatorViewModel ^>(this->DataContext);
 }
 
 void OperatorsPanel::OnIsBitFlipCheckedPropertyChanged(bool /*oldValue*/, bool newValue)
@@ -69,6 +70,11 @@ void OperatorsPanel::EnsureProgrammerRadixOps()
     if (!ProgrammerRadixOperators)
     {
         this->FindName(L"ProgrammerRadixOperators");
+    }
+
+    if (ProgrammerRadixOperators)
+    {
+        ProgrammerRadixOperators->checkDefaultBitShift();
     }
 }
 
